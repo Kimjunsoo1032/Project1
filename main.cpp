@@ -6,7 +6,6 @@ using namespace std;
 void PrintThread(uint32_t num) {
 	cout << "thread" << num << endl;
 }
-
 int main() {
 	thread t1(PrintThread, 1);
 	t1.join();
